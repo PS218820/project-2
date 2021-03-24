@@ -1,0 +1,71 @@
+﻿<Window x:Class="DeFluitendeFietser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeFluitendeFietser"
+        mc:Ignorable="d"
+        Title="De Fluitende Fietser – Facturering" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Foreground="White" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">Overzicht</TextBlock>
+        <ListBox MouseDoubleClick="lbOverzicht_MouseDoubleClick" x:Name="lbOverzicht" Grid.Row="2" Grid.Column="1" Grid.RowSpan="4" BorderBrush="Black"></ListBox>
+        <Button Grid.Row="6" Grid.Column="1" FontSize="20" Margin="10">Bestellen</Button>
+
+        <TextBlock Foreground="White" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20">Fietsen:</TextBlock>
+        <TextBlock Foreground="White" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20">Verzekeringen:</TextBlock>
+        <TextBlock Foreground="White" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20">Services:</TextBlock>
+        <TextBlock Foreground="White" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20">Huur termijn:</TextBlock>
+        <TextBlock x:Name="tbTotaal" Foreground="White" Grid.Row="6" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="20">Totaal prijs: € 0,00</TextBlock>
+
+        <TextBlock Foreground="White" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">Toevoegen</TextBlock>
+        <ComboBox SelectedIndex="0" SelectionChanged="cbFietsen_SelectionChanged" x:Name="cbFietsen" Grid.Row="2" Grid.Column="3" Margin="20">
+            <ComboBoxItem>Niet gekozen</ComboBoxItem>
+            <ComboBoxItem>Aanhangfiets € 20,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Bakfiets € 35,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Driewielfiets € 30,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Elektrische fiets € 30,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Kinderfiets € 15,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Ligfiets € 45,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Oma fiets € 12,50 / dag</ComboBoxItem>
+            <ComboBoxItem>Racefiets € 15,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Speed pedelec € 15,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Stadsfiets € 12,50 / dag</ComboBoxItem>
+            <ComboBoxItem>Vouwfiets € 10,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Zitfiets € 15,00 / dag</ComboBoxItem>
+        </ComboBox>
+        <ComboBox SelectedIndex="0" SelectionChanged="cbVerzekeringen_SelectionChanged" x:Name="cbVerzekeringen" Grid.Row="3" Grid.Column="3" Margin="20">
+            <ComboBoxItem>Niet gekozen</ComboBoxItem>
+            <ComboBoxItem>Beschadigingen € 5,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Diefstal € 10,00 / dag, eigen risico</ComboBoxItem>
+            <ComboBoxItem>Rechtsbijstand € 5,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Ongevallen € 2,50 / dag</ComboBoxItem>
+        </ComboBox>
+        <ComboBox SelectedIndex="0" SelectionChanged="cbServices_SelectionChanged" x:Name="cbServices" Grid.Row="4" Grid.Column="3" Margin="20">
+            <ComboBoxItem>Niet gekozen</ComboBoxItem>
+            <ComboBoxItem>Ophaalservice € 15,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Regenpak € 10,00 / dag</ComboBoxItem>
+            <ComboBoxItem>Lunchpakket basis € 12,50 / dag</ComboBoxItem>
+            <ComboBoxItem>Lunchpakket uitgebreid € 20,00 / dag</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="tbDagen" MouseLeave="tbDagen_MouseLeave" Grid.Row="5" Grid.Column="3" Margin="20">0</TextBox>
+        <Button x:Name="btToevoegen" Click="btToevoegen_Click" Grid.Row="6" Grid.Column="3" Margin="10" FontSize="20">Toevoegen</Button>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\bin\Debug\DeFluitendeFietser.exe.config
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\bin\Debug\DeFluitendeFietser.exe
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\bin\Debug\DeFluitendeFietser.pdb
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\DeFluitendeFietser.csprojAssemblyReference.cache
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\MainWindow.g.cs
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\App.g.cs
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\DeFluitendeFietser_MarkupCompile.cache
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\DeFluitendeFietser_MarkupCompile.lref
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\MainWindow.baml
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\DeFluitendeFietser.g.resources
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\DeFluitendeFietser.Properties.Resources.resources
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\DeFluitendeFietser.csproj.GenerateResource.cache
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\DeFluitendeFietser.csproj.CoreCompileInputs.cache
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\DeFluitendeFietser.exe
+C:\CSchijfSchool\Project2\DeFluitendeFietser\DeFluitendeFietser\obj\Debug\DeFluitendeFietser.pdb
